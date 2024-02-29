@@ -1,0 +1,240 @@
+p {
+    color: blue;
+}
+.bodyh1 {
+            color: rgb(223, 27, 85);
+            text-align: center;
+            font-family: monospace, sans-serif;
+            background-color: #f0f0f000;
+            margin: 0;
+            padding: 0;
+
+        }
+        .x1 {
+            color: blue;
+            text-align: center;
+            font-family: monospace,bold;
+            font-size: 10px;
+            
+        }
+.moreno {
+    height: 100px;
+    border: solid;
+    border-color: blue;
+    border-radius: 10%;
+    border-width: 0.9px;
+    flex-wrap: wrap;
+}
+
+/* Para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Cor do indicador da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f2f2f2; /* Cor da área de fundo da barra de rolagem */
+}
+
+/* Para navegadores Firefox */
+/* Estes seletores funcionam no Firefox Nightly com layout.css.scrollbar-color.enabled ativado (verifique a compatibilidade atual para navegadores Firefox) */
+* {
+    scrollbar-color: #3498db #f2f2f2;
+    scrollbar-width: thin;
+}
+
+.rei{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#pai {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
+}
+#texto{
+    color: #3498db;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+#tempo{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.grande {
+    display: flex;
+    justify-content: center;
+}
+
+/*configuração de centralização*/
+.caixa-grande{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black; 
+    border-radius: 25px;
+    position: absolute;
+    transition: 1s;
+    cursor: pointer;
+    background-color: rgb(115, 33, 182);
+    margin-top: 110px;
+}
+.caixa-grande:hover{
+    transform: rotate(360deg);
+    transition: 3s 15s;
+}
+/*final configuração de centralização*/
+
+
+/*configuração das caixa*/
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6, .caixa7, .caixa8{ 
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /*border: 5px solid black;*/
+    border-radius: 25px;
+    /*background-color: rgb(213, 255, 0);*/
+    transition:2s;
+
+}
+/*final configuração das caixa*/
+
+/*Cor de cada caixa*/
+.caixa1{
+
+    }
+.caixa2{
+
+}
+.caixa3{
+
+}
+
+.caixa4{
+
+}
+.caixa5{
+
+}
+.caixa6{
+
+}
+.caixa7{
+
+}
+.caixa8{
+
+}
+/*final do codigo de cor*/
+
+.caixa-grande:hover .caixa1{
+    transform: rotate(360deg)  translateX(200px);
+    background-color: #3498db;
+    
+}
+.caixa-grande:hover .caixa2{
+    transform: rotate(360deg) translateY(200px);
+    background-color: #e21e11;
+}
+.caixa-grande:hover .caixa3{
+    transform: rotate(360deg) translateX(-200px);
+    background-color: blue;
+}
+.caixa-grande:hover .caixa4{
+    transform: rotate(360deg) translateY(-200px);
+    background-color: chocolate;
+}
+.caixa-grande:hover .caixa5{
+    transform: rotate(360deg) translateX(200px) translateY(200px);
+    background-color: darkblue;
+}
+.caixa-grande:hover .caixa6{
+    transform: rotate(360deg) translateX(-200px) translateY(-200px);
+    background-color: black;
+}
+.caixa-grande:hover .caixa7{
+    transform: rotate(360deg) translateX(-200px) translateY(200px);
+    background-color: rgb(11, 99, 114);
+}
+.caixa-grande:hover .caixa8{
+    transform: rotate(360deg) translateX(200px) translateY(-200px);
+    background-color: rgb(255, 0, 106);
+}
+
+/*coração*/
+.coracao{
+    position:relative;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+}
+
+.coracao div {
+    background-color: #e21e11;
+    position: absolute;
+    margin: auto;
+    width: 125px;
+    height: 200px;
+}
+
+.coracao div:nth-child(1){
+    left: 40px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+    transform-origin: 50% 69%;
+    border-radius: 100px 100px 10px 10px;
+    animation: 4s linear infinite;
+    animation-name: c1;
+}
+.coracao div:nth-child(2){
+    left: 132px;
+    top: 151px;
+    transform: rotate(135deg);
+    transform-origin: 50% 31%;
+    border-radius: 100px 100px 10px 10px;
+    border-radius: 10px 10px 100px 100px;
+    animation: 4s 1s linear infinite;
+    animation-name: c2;
+}
+
+@keyframes c1{
+    25%{
+        transform: rotate(45deg) rotateX(180deg);
+    }
+    50%{
+        transform: rotate(45deg) rotateX(180deg);
+    }
+    75%{
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes c2{
+    25%{
+        transform: rotate(135deg) rotateX(180deg);
+    }
+    50%{
+        transform: rotate(135deg) rotateX(180deg);
+    }
+    75%{
+        transform: rotate(135deg);
+    }
+}
