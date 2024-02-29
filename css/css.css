@@ -111,70 +111,53 @@ p {
     border-radius: 25px;
     /*background-color: rgb(213, 255, 0);*/
     transition:2s;
+    pointer-events: none;
 
 }
 /*final configuração das caixa*/
 
-/*Cor de cada caixa*/
-.caixa1{
 
-    }
-.caixa2{
-
-}
-.caixa3{
-
-}
-
-.caixa4{
-
-}
-.caixa5{
-
-}
-.caixa6{
-
-}
-.caixa7{
-
-}
-.caixa8{
-
-}
-/*final do codigo de cor*/
 
 .caixa-grande:hover .caixa1{
     transform: rotate(360deg)  translateX(200px);
     background-color: #3498db;
+    pointer-events: none;
     
 }
 .caixa-grande:hover .caixa2{
     transform: rotate(360deg) translateY(200px);
     background-color: #e21e11;
+    pointer-events: none;
 }
 .caixa-grande:hover .caixa3{
     transform: rotate(360deg) translateX(-200px);
     background-color: blue;
+    pointer-events: none;
 }
 .caixa-grande:hover .caixa4{
     transform: rotate(360deg) translateY(-200px);
     background-color: chocolate;
+    pointer-events: none;
 }
 .caixa-grande:hover .caixa5{
     transform: rotate(360deg) translateX(200px) translateY(200px);
     background-color: darkblue;
+    pointer-events: none;
 }
 .caixa-grande:hover .caixa6{
     transform: rotate(360deg) translateX(-200px) translateY(-200px);
     background-color: black;
+    pointer-events: none;
 }
 .caixa-grande:hover .caixa7{
     transform: rotate(360deg) translateX(-200px) translateY(200px);
     background-color: rgb(11, 99, 114);
+    pointer-events: none;
 }
 .caixa-grande:hover .caixa8{
     transform: rotate(360deg) translateX(200px) translateY(-200px);
     background-color: rgb(255, 0, 106);
+    pointer-events: none;
 }
 
 /*coração*/
@@ -218,23 +201,29 @@ p {
 @keyframes c1{
     25%{
         transform: rotate(45deg) rotateX(180deg);
+        pointer-events: none;
     }
     50%{
         transform: rotate(45deg) rotateX(180deg);
+        pointer-events: none;
     }
     75%{
         transform: rotate(45deg);
+        pointer-events: none;
     }
 }
 
 @keyframes c2{
     25%{
         transform: rotate(135deg) rotateX(180deg);
+        pointer-events: none;
     }
     50%{
         transform: rotate(135deg) rotateX(180deg);
+        pointer-events: none;
     }
     75%{
         transform: rotate(135deg);
+        pointer-events: none;
     }
 }
